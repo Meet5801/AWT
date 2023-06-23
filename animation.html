@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            background-color: black;
+            transition: 3s;
+            color: white;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            margin-left: 600px;
+        }
+        #one:hover{
+            /* -webkit-transform: translate(100px,100px);
+            -moz-transform: translate(100px,100px); 
+             -ms-transform: translate(100px,100px); 
+            -o-transform: translate(100px,100px); */
+            transform: translate(100px,100px); */
+            background-color: blue;
+            color: greenyellow; 
+        }
+        #two:hover{
+            /* -webkit-transform: Rotate(360deg); */
+            /* -moz-transform: Rotate(360deg); */
+            /* -ms-transform: Rotate(360deg);
+            -o-transform: Rotate(360deg); */
+            transform: Rotate(360deg);
+            background-color: blue;
+            color: greenyellow;
+        }
+        #three:hover{
+            /* -webkit-transform: rotate3d(1,1,0,360deg);
+            -moz-transform: rotate3d(1,1,0,360deg);
+            -ms-transform: rotate3d(1,1,0,360deg);
+            -o-transform: rotate3d(1,1,0,360deg); */
+            transform: rotate3d(1,1,0,360deg);
+            background-color: blue;
+            color: greenyellow;
+        }
+        #four:hover{
+            /* -webkit-transform: skew(45deg);
+            -moz-transform: skew(45deg);
+            -ms-transform: skew(45deg);
+            -o-transform: skew(45deg); */
+            transform: skew(45deg);
+            background-color: blue;
+            color: greenyellow;
+        }
+        #five:hover{
+            /* -webkit-transform: Scale(2);
+            -moz-transform: Scale(2);
+            -ms-transform: Scale(2);
+            -o-transform: Scale(2); */
+            transform: Scale(2);
+            background-color: blue;
+            color: greenyellow;
+        }
+        #six:hover{
+            opacity: -1;
+        }
+        #seven:hover{
+            box-shadow: 0 0 50px blue;
+        }
+        #eight:hover{
+            text-shadow: 3px 3px 3px blue;
+        }
+        #nine:hover{
+            border-radius: 100%;
+        }
+        #ten:hover{
+            overflow: scroll;
+        }
+    </style>
+</head>
+<body>
+    <div id="one"> Translate </div><hr>
+    <div id="two">Rotate</div><hr>
+    <div id="three">3d</div><hr>
+    <div id="four">Skew</div><hr>
+    <div id="five">Scale</div><hr>
+    <div id="six">Opacity</div><hr>
+    <div id="seven">box shadow</div><hr>
+    <div id="eight">text shadow</div><hr>
+    <div id="nine">border radius</div><hr>
+    <div id="ten">
+        overflowoverflowoverflowoverflowoverflow
+        overflowoverflowoverflowoverflowoverflow
+        overflowoverflowoverflowoverflowoverflow
+        overflowoverflowoverflowoverflowoverflow
+        overflowoverflowoverflowoverflowoverflow
+        overflowoverflowoverflowoverflowoverflow
+        overflowoverflowoverflowoverflowoverflow</div><hr>
+</body>
+</html>
