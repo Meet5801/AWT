@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: blueviolet;
+            position: relative;
+            animation: Demo 10s;
+            animation-iteration-count: infinite;
+            display: flex;
+            /* text-align: center; */
+            justify-content: center;
+            align-items: center;
+            /* margin-left: 600px; */
+        }
+        @keyframes Demo {
+            0%{
+                background-color: rgb(14, 50, 182);;
+                left: 0px;
+                top:0px;
+                transform: rotate(0deg);
+            }
+            25%{
+                background-color: rgb(37, 67, 179);
+                left: 400px;
+                top:0px;
+                transform: rotate(90deg);
+            }
+            50%{
+                background-color: rgb(101, 113, 156);
+                left: 400px;
+                top:400px;
+                transform: rotate(180deg);
+            }
+            75%{
+                background-color: rgb(108, 112, 123);
+                left: 0px;
+                top: 400px;
+                transform: rotate(360deg);
+            }
+            100%{
+                background-color: rgb(214, 215, 220);
+                left: 0px;
+                top:0px;
+                transform: rotate(720deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="one">square</div>
+</body>
+</html>
