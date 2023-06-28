@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Button Example</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script> 
+    $(document).ready(function(){
+      $("#button1").click(function(){
+        $("div").animate({
+          left : '+=250px'
+        });
+      });
+
+      $("#button2").click(function(){
+        $("div").animate({
+          width: '+=250px'
+        });
+      });
+
+      $("#button3").click(function(){
+        $("div").animate({
+          height: '+=250px'
+        });
+      });
+    });
+    </script> 
+</head>
+<body>
+  <button id="button1" class="button">animation 1</button>
+  <button id="button2" class="button">animation 2</button>
+  <button id="button3" class="button">animation 3</button>
+<hr><br>
+
+ <div style=" background-color: rgb(36, 188, 215);height: 100px; width: 100px; position: absolute;"></div>
+</body>
+</html>
